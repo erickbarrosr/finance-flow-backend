@@ -1,0 +1,10 @@
+spring:
+  application:
+    name: finance-flow
+  profiles:
+    active: ${APP_PROFILE:local}
+  jpa:
+    open-in-view: false
+
+cors:
+  origins: ${CORS_ORIGINS:http://localhost:4200}
