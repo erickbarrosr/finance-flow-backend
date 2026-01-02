@@ -8,3 +8,7 @@ spring:
 
 cors:
   origins: ${CORS_ORIGINS:http://localhost:4200}
+
+jwt:
+  secret: ${JWT_SECRET:açskjreiurvncklvnaoriqwunkvça}
+  expiration: ${JWT_EXPIRATION_MS:3600000}
