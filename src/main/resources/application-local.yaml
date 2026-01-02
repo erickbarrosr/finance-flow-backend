@@ -4,13 +4,17 @@ spring:
       on-profile: local
 
   datasource:
-    url: jdbc:h2:mem:testdb
-    username: erickbarrosr
+    url: jdbc:postgresql://localhost:5432/finance_flow_dev
+    username: erickbarrosrezende
     password: 0123456789
+
+  flyway:
+    schemas: finance_flow_api
+    default-schema: finance_flow_api
 
   h2:
     console:
-      enabled: true
+      enabled: false
       path: /h2-console
 
   jpa:
@@ -18,3 +22,4 @@ spring:
     properties:
       hibernate:
         format_sql: true
+        default_schema: finance_flow_api
