@@ -10,5 +10,5 @@ cors:
   origins: ${CORS_ORIGINS:http://localhost:4200}
 
 jwt:
-  secret: ${JWT_SECRET:açskjreiurvncklvnaoriqwunkvça}
+  secret: ${JWT_SECRET:5F2d9cA3xM4kL8QpE0wZBvYhN2sJ6R7C9D1XUoK3Veurijkfhdfywqeuibjkvbqureyqweuijkvcxbnvjaksyfuwiqryequi}
   expiration: ${JWT_EXPIRATION_MS:3600000}
