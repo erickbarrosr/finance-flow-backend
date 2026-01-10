@@ -27,7 +27,7 @@ public class UserController {
         log.info("Recebida requisição de registro de usuário: {}", dto.getEmail());
 
         var domain = UserDTOMapper.toDomain(dto, null);
-        var saved = userService.register(domain, dto.getEmail());
+        var saved = userService.register(domain, dto.getPassword());
         var response = UserDTOMapper.toResponse(saved);
 
         log.info("Usuário registrado com sucesso. ID: {}", saved.getId());
